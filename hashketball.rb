@@ -214,6 +214,8 @@ end
 
 def big_shoe_rebounds
   #of rebounds ==> player with largest shoe size
+  #we create variables for the values we're looking for to compare
+  
 largestShoe = 0
 rebounds = 0
 
@@ -228,4 +230,16 @@ rebounds = 0
   rebounds
 end
 
-
+def player_by_num(name)
+  #get a players name and will return the players number
+  
+    game_hash.each do |location, team_data|
+      team_data[:players].each do |attibute, value|
+  binding.pry
+        if attibute[:name]  == name
+          attibute[:number] 
+        end
+     end
+  end
+end
+ player_by_num("Alan Anderson")
